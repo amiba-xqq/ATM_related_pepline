@@ -1,6 +1,6 @@
 // 设置参数，只需要更改3-8行代码的参数; 第3行是Batch export TIFF images from LIF files脚本得到的TIFF文件所在的文件夹
 // Set parameters; only modify the parameters in lines 3–8 of the code;  Line 3 specifies the folder containing the TIFF files exported from 'Batch export TIFF images from LIF files' script
-base_dir = "C:\\Users\\13103\\Desktop\\confocol\\niechen_20230609\\RNase rescue pATM_merged tif\\";
+base_dir = "C:\\Users\\Yourname\\Desktop\\confocol\\HeLa_merged tif\\";
 blue_min = 0;
 blue_max = 255;
 Threshold_green = 60;
