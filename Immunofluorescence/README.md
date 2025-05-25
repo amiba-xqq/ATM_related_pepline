@@ -5,13 +5,22 @@ Immunofluorescence assay
 
 免疫荧光图片通过Leica共聚焦荧光显微镜拍摄，文件是.lif格式的，每个lif文件包含多组图片。
 
+分析步骤为：
+（1）使用Batch export TIFF images from LIF files里的ImageJ macro脚本导出TIFF图片；
+（2）使用Counting the foci number或Relative fluorescence intensity within nuclei里的ImageJ macro脚本分析对应的指标，得到对应的csv结果文件；
+（3）使用Merge CSV Files里的R脚本合并所有统计的结果。
+
 所有的ImageJ macro脚本只适用于windows系统。
-
-
 
 
 ImageJ macro and R scripts were used to quantify the number of foci, and relative fluorescence intensity of DNA repair proteins within nuclei for each cell.
 
 Immunofluorescence images were captured by a confocal fluorescence microscope (Leica). Files are in .LIF format, with each LIF file containing multiple sets of images.
+
+The analysis workflow is as follows:
+(1) Use the ImageJ macro script in "Batch export TIFF images from LIF files" to export TIFF images;
+(2) Use the ImageJ macro scripts in "Counting the foci number" or "Relative fluorescence intensity within nuclei" to analyze the 
+corresponding metrics and obtain the corresponding CSV result files;
+(3) Use the R script in "Merge CSV Files" to merge all statistical results.
 
 All ImageJ macro scripts are only compatible with Windows systems.
