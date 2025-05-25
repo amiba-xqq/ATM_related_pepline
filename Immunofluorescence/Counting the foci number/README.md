@@ -1,0 +1,2 @@
+# Counting the foci number
+
