@@ -5,7 +5,7 @@ blue_min = 0;
 blue_max = 255;
 Threshold_green = 60;
 Threshold_red = 60;
-min_size = 200;
+min_size = 1000;
 max_size = 20000;
 
 // 遍历每个文件夹
