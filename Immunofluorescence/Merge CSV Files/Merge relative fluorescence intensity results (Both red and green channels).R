@@ -48,7 +48,7 @@ repeat{
   
 }
 
-# 最后得到的green_level_merge.csv文件展示了合并后各组green通道相对荧光强度；red_level_merge.csv文件展示了合并后各组green通道通道相对荧光强度。
+# 最后得到的green_level_merge.csv文件展示了合并后各组green通道相对荧光强度；red_level_merge.csv文件展示了合并后各组red通道通道相对荧光强度。
 # The final green_level_merge.csv file shows the merged Relative fluorescence intensity within nuclei of green channel for each group; the red_level_merge.csv file shows the merged Relative fluorescence intensity within nuclei of red channel for each group.
 
 
