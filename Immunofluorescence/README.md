@@ -18,9 +18,9 @@ ImageJ macro and R scripts were used to quantify the number of foci, and relativ
 Immunofluorescence images were captured by a confocal fluorescence microscope (Leica). Files are in .LIF format, with each LIF file containing multiple sets of images.
 
 The analysis workflow is as follows:
-(1) Use the ImageJ macro script in "Batch export TIFF images from LIF files" to export TIFF images;
-(2) Use the ImageJ macro scripts in "Counting the foci number" or "Relative fluorescence intensity within nuclei" to analyze the 
+(1) Use the ImageJ macro script in `Batch export TIFF images from LIF files` to export TIFF images;
+(2) Use the ImageJ macro scripts in `Counting the foci number` or `Relative fluorescence intensity within nuclei` to analyze the 
 corresponding metrics and obtain the corresponding CSV result files;
-(3) Use the R script in "Merge CSV Files" to merge all statistical results.
+(3) Use the R script in `Merge CSV Files` to merge all statistical results.
 
 All ImageJ macro scripts are only compatible with Windows systems.
