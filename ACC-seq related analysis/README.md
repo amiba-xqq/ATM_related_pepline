@@ -9,7 +9,8 @@
 * samtools
 * deeptools
 
-`1.condensate_binding_regions_analysis.sh`与 `2.condensate_binding_regions_analysis.R`用于得到ACC-seq各组的condendate binding regions。该shell脚本需要使用MACS2，建议构建conda环境，依赖Python2(>=2.7)。`hg38.chrom.sizes`用于`1.condensate_binding_regions_analysis.sh`脚本。
+`1.condensate_binding_regions_analysis.sh`与 `2.condensate_binding_regions_analysis.R`用于得到ACC-seq各组的condendate binding regions。该shell脚本需要使用MACS2，建议构建conda环境，依赖Python2(>=2.7)。
+`hg38.chrom.sizes`用于`1.condensate_binding_regions_analysis.sh`脚本。
 
 `3.condensate_binding_regions_annotation.R`用于对condendate binding regions进行注释，分析在基因组分布的特征，以及进行相关基因的通路富集分析。
 
