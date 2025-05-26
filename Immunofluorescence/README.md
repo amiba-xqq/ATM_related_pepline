@@ -6,9 +6,9 @@ Immunofluorescence assay
 免疫荧光图片通过Leica共聚焦荧光显微镜拍摄，文件是.lif格式的，每个lif文件包含多组图片。
 
 分析步骤为：
-（1）使用Batch export TIFF images from LIF files里的ImageJ macro脚本导出TIFF图片；
-（2）使用Counting the foci number或Relative fluorescence intensity within nuclei里的ImageJ macro脚本分析对应的指标，得到对应的csv结果文件；
-（3）使用Merge CSV Files里的R脚本合并所有统计的结果。
+（1）使用`Batch export TIFF images from LIF files`里的ImageJ macro脚本导出TIFF图片；
+（2）使用`Counting the foci number`或`Relative fluorescence intensity within nuclei`里的ImageJ macro脚本分析对应的指标，得到对应的csv结果文件；
+（3）使用`Merge CSV Files`里的R脚本合并所有统计的结果。
 
 所有的ImageJ macro脚本只适用于windows系统。
 
