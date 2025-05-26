@@ -1,7 +1,7 @@
 Immunofluorescence assay
 =============================
 
-这些ImageJ macro和R脚本是用于定量分析DNA修复蛋白形成的每个细胞的foci数目，核内相对荧光强度。
+这些ImageJ macro和R脚本是用于定量分析DNA修复蛋白形成的每个细胞的foci数目，核内相对荧光强度。同样也使用于分析PLA实验的分析，用于统计PLA foci。
 
 免疫荧光图片通过Leica共聚焦荧光显微镜拍摄，文件是.lif格式的，每个lif文件包含多组图片。
 
@@ -13,7 +13,7 @@ Immunofluorescence assay
 所有的ImageJ macro脚本只适用于windows系统。
 
 
-ImageJ macro and R scripts were used to quantify the number of foci, and relative fluorescence intensity of DNA repair proteins within nuclei for each cell.
+ImageJ macro and R scripts were used to quantify the number of foci, and relative fluorescence intensity of DNA repair proteins within nuclei for each cell. Additionally, these scripts can also be used to analyze PLA (Proximity Ligation Assay) assay to count PLA foci.
 
 Immunofluorescence images were captured by a confocal fluorescence microscope (Leica). Files are in .LIF format, with each LIF file containing multiple sets of images.
 
