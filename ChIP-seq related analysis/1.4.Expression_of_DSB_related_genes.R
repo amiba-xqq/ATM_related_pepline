@@ -1,6 +1,5 @@
 rm(list=ls())
 library(tidyverse)
-library(pheatmap)
 library(ggpubr)
 library("rtracklayer")
 library("SummarizedExperiment")
