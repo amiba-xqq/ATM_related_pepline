@@ -22,14 +22,7 @@ DMSO_U <- DMSO[DMSO$log2FC_nativevsfix>log2(1.5)&
 DMSO_U_bed <- DMSO_U[,1:3]
 DMSO_U_bed$start <- DMSO_U_bed$start+2500
 DMSO_U_bed$end <- DMSO_U_bed$end-2500
-
-total_DMSO_bed <- read.table("total_DMSO_ACCseq_peaks.bed")
-colnames(total_DMSO_bed) <- c("chr","start","end")
-total_DMSO_bed$mean <- floor(rowMeans(total_DMSO_bed[,2:3]))
-total_DMSO_bed$id <- paste(total_DMSO_bed$chr,"_",total_DMSO_bed$mean)
-DMSO_U_bed$id <- paste(DMSO_U_bed$chr,"_",DMSO_U_bed$start)
-DMSO_U_bed2 <- total_DMSO_bed[total_DMSO_bed$id %in% DMSO_U_bed$id,1:3]
-write.table(DMSO_U_bed2,"DMSO_Ushape_regions.bed",col.names = F,row.names = F,quote = F)
+write.table(DMSO_U_bed,"DMSO_Ushape.bed",col.names = F,row.names = F,quote = F)
 
 ####分析pOHT组的condensate binding regions####
 ####Analyze condensate binding regions in the pOHT group####
@@ -50,14 +43,7 @@ pOHT_U <- pOHT[pOHT$log2FC_nativevsfix>log2(1.5)&
 pOHT_U_bed <- pOHT_U[,1:3]
 pOHT_U_bed$start <- pOHT_U_bed$start+2500
 pOHT_U_bed$end <- pOHT_U_bed$end-2500
-
-total_pOHT_bed <- read.table("total_pOHT_ACCseq_peaks.bed")
-colnames(total_pOHT_bed) <- c("chr","start","end")
-total_pOHT_bed$mean <- floor(rowMeans(total_pOHT_bed[,2:3]))
-total_pOHT_bed$id <- paste(total_pOHT_bed$chr,"_",total_pOHT_bed$mean)
-pOHT_U_bed$id <- paste(pOHT_U_bed$chr,"_",pOHT_U_bed$start)
-pOHT_U_bed2 <- total_pOHT_bed[total_pOHT_bed$id %in% pOHT_U_bed$id,1:3]
-write.table(pOHT_U_bed2,"pOHT_Ushape_regions.bed",col.names = F,row.names = F,quote = F)
+write.table(pOHT_U_bed,"pOHT_Ushape.bed",col.names = F,row.names = F,quote = F)
 
 ####分析pOHTIRAK1i组的condensate binding regions####
 ####Analyze condensate binding regions in the pOHTIRAK1i group####
@@ -78,14 +64,7 @@ pOHTIRAK1i_U <- pOHTIRAK1i[pOHTIRAK1i$log2FC_nativevsfix>log2(1.5)&
 pOHTIRAK1i_U_bed <- pOHTIRAK1i_U[,1:3]
 pOHTIRAK1i_U_bed$start <- pOHTIRAK1i_U_bed$start+2500
 pOHTIRAK1i_U_bed$end <- pOHTIRAK1i_U_bed$end-2500
+write.table(pOHTIRAK1i_U_bed,"pOHTIRAK1i_Ushape.bed",col.names = F,row.names = F,quote = F)
 
-total_pOHTIRAK1i_bed <- read.table("total_pOHTIRAK1i_ACCseq_peaks.bed")
-colnames(total_pOHTIRAK1i_bed) <- c("chr","start","end")
-total_pOHTIRAK1i_bed$mean <- floor(rowMeans(total_pOHTIRAK1i_bed[,2:3]))
-total_pOHTIRAK1i_bed$id <- paste(total_pOHTIRAK1i_bed$chr,"_",total_pOHTIRAK1i_bed$mean)
-pOHTIRAK1i_U_bed$id <- paste(pOHTIRAK1i_U_bed$chr,"_",pOHTIRAK1i_U_bed$start)
-pOHTIRAK1i_U_bed2 <- total_pOHTIRAK1i_bed[total_pOHTIRAK1i_bed$id %in% pOHTIRAK1i_U_bed$id,1:3]
-write.table(pOHTIRAK1i_U_bed2,"pOHTIRAK1i_Ushape_regions.bed",col.names = F,row.names = F,quote = F)
-
-# 最后得到的DMSO_Ushape_regions.bed、pOHT_Ushape_regions.bed、pOHTIRAK1i_Ushape_regions.bed就是各组的condensate binding regions对应的BED文件
-# Finally obtained DMSO_Ushape_regions.bed, pOHT_Ushape_regions.bed, and pOHTIRAK1i_Ushape_regions.bed are the BED files corresponding to the condensate binding regions for each group.
+# 最后得到的DMSO_Ushape.bed、pOHT_Ushape.bed、pOHTIRAK1i_Ushape.bed就是各组的condensate binding regions对应的BED文件
+# Finally obtained DMSO_Ushape.bed, pOHT_Ushape.bed, and pOHTIRAK1i_Ushape.bed are the BED files corresponding to the condensate binding regions for each group.
