@@ -1,7 +1,7 @@
 #!/bin/bash
 # 下面两行路径根据实际情况更改，dir是分析的最上级文件夹路径,gemome是基因组比对的索引文件的所在路径
 # The following two lines of paths should be adjusted according to your actual setup: dir is the top-level folder path for analysis, and genome is the path where the genome alignment index file is located.
-dir=/mnt/NC/ChIPseq
+dir=/media/niechen/niechen3/IRAK1_study/pNBS1_ChIPseq_DIvA
 genome=/home/DDR/genome/hisat2_GRCh38/hisat2_GRCh38
 # 创建各个文件夹存放ChIP-seq各步骤产生文件
 # Create directories to store files generated at each step of the ChIP-seq process.
@@ -72,8 +72,6 @@ done
 # 根据情况决定是否需要合并生物学重复组（需要是sorted好的bam）,合并得到的merged的bam文件再导出为bigwig
 # Determine whether to merge biological replicates based on the situation (sorted BAM files required), and export the merged BAM file as a BigWig file.
 cd ${dir}/bam_sort/
-samtools merge -o gH2AX_4OHT_IP.merged.bam gH2AX_4OHT_IP_rep1.rmdupsorted.bam gH2AX_4OHT_IP_rep2.rmdupsorted.bam
-samtools merge -o gH2AX_DMSO_IP.merged.bam gH2AX_DMSO_IP_rep1.rmdupsorted.bam gH2AX_DMSO_IP_rep2.rmdupsorted.bam
 samtools merge -o pNBS1_4OHTIRAK1i_IP.merged.bam pNBS1_4OHTIRAK1i_IP_rep1.rmdupsorted.bam pNBS1_4OHTIRAK1i_IP_rep2.rmdupsorted.bam
 samtools merge -o pNBS1_4OHT_IP.merged.bam pNBS1_4OHT_IP_rep1.rmdupsorted.bam pNBS1_4OHT_IP_rep2.rmdupsorted.bam
 
