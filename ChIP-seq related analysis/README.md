@@ -13,7 +13,7 @@
 
 `1.3.DSB_annotation.R`用于对ATM激活的DSB位点进行注释，并分析其中IRAK1依赖与不依赖的DSB位点。
 
-`1.4.Expression_of_DSB_related_genes.R`用于分析IRAK1依赖与不依赖的DSB位点相关基因在正常U2OS细胞中的表达水平。
+`1.4.Expression_of_DSB_related_genes.R`用于分析IRAK1依赖与不依赖的DSB位点相关基因在正常的U2OS细胞中的表达水平。
 
 `1.5.Other_ChIPseq_signal_in_DSB_related_genes.R`用于分析IRAK1依赖与不依赖的DSB位点相关基因附近组蛋白修饰相关ChIPseq信号的相对水平。`TSS_ALL_seq_counts.txt`是该脚本使用的文件，是各组ChIPseq在所有基因的TSS±5kb范围内的counts矩阵。
 
