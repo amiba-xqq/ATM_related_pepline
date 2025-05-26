@@ -18,6 +18,15 @@ imageio(2.33.1)。
 *sphere_model.py用于将make_sphere.py得到的pATM foci的球体模型可视化，构建3D模型。
 
 
+We acquire fluorescent images of pATM and RNA labeled with 5-EU using STED ultra-high resolution fluorescence microscopy. Then, we use these Python scripts to generate 3D models or perform EU enrichment analysis. Ensure that Python 3 (version 3.8 or higher) is installed along with the required dependency libraries listed below:
+numpy(1.26.4);
+pandas(2.2.2);
+scipy(1.13.1);
+tiffile(2023.4.12);
+scikit-image(0.23.2);
+pyvista(0.44.2);
+imageio(2.33.1).
+
 *3D_make_model.py takes the original pATM/EU fluorescence TIFF images and generates their 3D models.
 
 *EU_enrichment_analysis.py is designed to process the original pATM/EU fluorescence TIFF images. It generates sphere models of pATM foci, calculates the relative fluorescence intensity (EU enrichment) within each spherical region, and finally computes the Spearman correlation coefficient between each focus volume and its corresponding EU enrichment value.
