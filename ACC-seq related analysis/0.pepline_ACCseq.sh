@@ -18,7 +18,7 @@ ls *_2*  >2
 paste 1 2 >config
 cat config | while read id
 do
-   arr=($id)
+    arr=($id)
     fq1=${arr[0]}
     fq2=${arr[1]}
     time fastp \
