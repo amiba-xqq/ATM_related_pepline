@@ -27,7 +27,7 @@
 * deeptools
 * featureCounts
 
-`6.GROseq_U2OS_tpm.R`用于正常U2OS细胞的GRO-seq原始数据的下游分析，从而得到TPM表达矩阵，用于后续`7.GROseq_level_in_condensate_binding_region_related_gene.R`的分析。
+`6.GROseq_U2OS_tpm.R`用于正常U2OS细胞的GRO-seq原始数据的下游分析，从而得到TPM表达矩阵，用于后续的分析。
 
 `7.GROseq_level_in_condensate_binding_region_related_gene.R`用于分析各组condendate binding regions相关基因在GRO-seq中的TPM值。
 
