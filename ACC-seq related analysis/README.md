@@ -31,7 +31,7 @@
 
 `7.GROseq_level_in_condensate_binding_region_related_gene.R`用于分析各组condendate binding regions相关基因在GRO-seq中的TPM值。
 
-`8.distance_between_condensate_binding_regions_and_other_genomic_sites.R`用于分析condensate_binding_region与`ChIP-seq related analysis`与最临近的ATM激活DSB位点或non-DSB pNBS1 peaks之间的基因组距离。
+`8.distance_between_condensate_binding_regions_and_other_genomic_sites.R`用于分析condensate_binding_region与最临近的ATM激活DSB位点或non-DSB pNBS1 peaks(来自于`ChIP-seq related analysis`)之间的基因组距离。
 
 
 `0.pepline_ACCseq.sh` is used for upstream analysis of ACC-seq raw data. It is recommended to set up a conda environment, which requires Python3 (version 3.8 or higher), and the following software should be installed:
@@ -63,5 +63,5 @@
 
 `7.GROseq_level_in_condensate_binding_region_related_gene.R` evaluates the TPM values of genes associated with condensate binding regions within the GRO-seq data.
 
-`8.distance_between_condensate_binding_regions_and_other_genomic_sites.R` calculates the genomic distances between condensate binding regions and other significant genomic sites, including those related to ChIP-seq analysis and the nearest ATM-activated double-strand break (DSB) sites or non-DSB pNBS1 peaks.
+`8.distance_between_condensate_binding_regions_and_other_genomic_sites.R` calculates the genomic distances between condensate binding regions and the nearest ATM-activated double-strand break (DSB) sites or non-DSB pNBS1 peaks (analyzed from `ChIP-seq related analysis`).
 
