@@ -86,3 +86,8 @@ ls $file_bamsort3 | while read id
 do
 samtools flagstat $id > $(basename -s .bam $id).stat
 done
+
+cd ${dir}/bam_STAR_sort_clear/
+bedtools multicov -bams ctrlIP.filted.bam noIRIP_merged.bam IRIP_merged.bam IRIRAK1iIP_merged.bam   \
+-bed Homo_sapiens.GRCh38.108.bed > ../NBS1_RIP_all_gene_merged.txt
+
