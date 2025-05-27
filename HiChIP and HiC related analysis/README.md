@@ -12,3 +12,6 @@
 
 `hg38.genome`用于`0.pepline_HiChIP.sh`。
 
+`1.FitHiChIP_get_pNBS1_HiChIP_loops.sh`用于分析得到pNBS1 HiChIP loops，需要提前安装FitHiChIP(https://github.com/ay-lab/FitHiChIP) 。
+
+
