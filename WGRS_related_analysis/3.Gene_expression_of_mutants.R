@@ -8,8 +8,8 @@ library(org.Hs.eg.db)
 library(clusterProfiler)
 library(ggpubr)
 
-####读取U2OS-counts矩阵####
-####Read U2OS-counts matirx#####
+####读取HeLa-counts矩阵####
+####Read HeLa-counts matirx#####
 counts_HeLa <- read.table("counts_HeLa.txt",header = T)
 counts_HeLa <- counts_HeLa[,c(1,6:9)]
 colnames(counts_HeLa)[3:5] <- c("HeLa1","HeLa2","HeLa3")
