@@ -8,7 +8,7 @@
 * samtools
 * pairtools
 
-此外还需要安装HiChiP(https://github.com/dovetail-genomics/HiChiP) 。
+此外还需要安装[HiChIP](https://github.com/dovetail-genomics/HiChiP)。
 
 `hg38.genome`用于`0.pepline_HiChIP.sh`。
 
