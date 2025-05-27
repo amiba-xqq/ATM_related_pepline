@@ -19,3 +19,44 @@
 `FitHiChIP_DSB_link.table`是`1.FitHiChIP_get_pNBS1_HiChIP_loops.sh`中使用`hicPlotTADs`作图需要的设置参数的文档。
 
 `2.APA_analysis.sh`用于获取DIvA细胞中同一染色体内ATM激活DSB位点与相邻的condensate binding regions/non-DSB pNBS1 peaks配对的loops，以及随机配对loops,最后进行APA分析并作图。需要提前安装`fanc`(https://github.com/vaquerizaslab/fanc) 。
+
+
+`0.pepline_HiChIP.sh` is used for upstream analysis of HiChIP and HiC data. It is recommended to use a conda environment with Python3 (>=3.8) installed, along with the following software:
+* fastqc
+* multiqc
+* fastp
+* bwa
+* samtools
+* pairtools
+
+**HiChIP Installation:**
+Additionally, you need to install HiChIP from the following GitHub repository: [HiChIP](https://github.com/dovetail-genomics/HiChiP).
+
+**Required Files for `0.pepline_HiChIP.sh`:**
+The script `0.pepline_HiChIP.sh` requires the `hg38.genome` file, which should be downloaded and placed in your working directory.
+
+**Using `1.FitHiChIP_get_pNBS1_HiChIP_loops.sh`:**
+To analyze pNBS1 HiChIP loops and generate visualizations using this script, ensure you have the following tools installed:
+
+- **FitHiChIP:** Available at [FitHiChIP](https://github.com/ay-lab/FitHiChIP).
+- **HiCExplorer:** Obtainable from [HiCExplorer](https://github.com/deeptools/HiCExplorer).
+
+**Configuration Files for HiChIP Analysis:**
+The configuration files `configfile_HiChIP_4OHT_DSB` and `configfile_HiChIP_DMSO_DSB` are essential for running the 
+`FitHiChIP_HiCPro.sh` script within `1.FitHiChIP_get_pNBS1_HiChIP_loops.sh`. These files specify parameters needed to process HiChIP 
+data effectively.
+
+**Plotting Configuration:**
+For creating plots using `hicPlotTADs`, ensure you have the configuration file `FitHiChIP_DSB_link.table` in your directory. This 
+file is used within the script to set up plotting parameters correctly.
+
+**Performing APA Analysis with `2.APA_analysis.sh`:**
+This script identifies loops formed by ATM-activated DSB sites within the same chromosome, pairing them with adjacent condensate 
+binding regions or non-DSB pNBS1 peaks. Additionally, it generates random pairings for comparative analysis and performs APA 
+(Analyzing Promoter Architecture) to analyze these loop structures.
+
+**Required Software for APA Analysis:**
+Before running `2.APA_analysis.sh`, install the `fanc` package using the following link: 
+[fanc](https://github.com/vaquerizaslab/fanc).
+
+
