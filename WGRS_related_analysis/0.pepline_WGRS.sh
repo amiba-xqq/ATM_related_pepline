@@ -1,4 +1,6 @@
 #!/bin/bash
+# 下面两行路径根据实际情况更改，dir是分析的最上级文件夹路径,index是基因组比对的索引文件的所在路径
+# The following two lines of paths should be adjusted according to your actual setup: `dir` is the top-level folder path for analysis, and `index` is the path where the genome alignment index file is located.
 dir=/mnt/NC/WGRS_202503
 index=/home/DDR/genome/bwa_hg38/hg38.fa
 cd ${dir}/
