@@ -22,10 +22,10 @@ do
     time fastp \
     --in1 $fq1 \
     --in2 $fq2 \
-    --out1 ../cleandata/$(basename -s .fastq.gz $fq1).fq.gz \
-    --out2 ../cleandata/$(basename -s .fastq.gz $fq2).fq.gz \
-    --json ../cleandata/$(basename -s _1.fastq.gz $fq1).json \
-    --html ../cleandata/$(basename -s _1.fastq.gz $fq1).html \
+    --out1 ../cleandata/$(basename -s .fq.gz $fq1).fq.gz \
+    --out2 ../cleandata/$(basename -s .fq.gz $fq2).fq.gz \
+    --json ../cleandata/$(basename -s _1.fq.gz $fq1).json \
+    --html ../cleandata/$(basename -s _1.fq.gz $fq1).html \
     --trim_poly_g --poly_g_min_len 6 \
     --trim_poly_x --poly_x_min_len 6 \
     --cut_front --cut_tail --cut_window_size 4 \
