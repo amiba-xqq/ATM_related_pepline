@@ -1,0 +1,44 @@
+[test arcs]
+file = /mnt/NC/HiChIP/FitHiChIP/4OHTHiChIP_DSB/FitHiChIP_Peak2ALL_b5000_L10000_U2000000/P2PBckgr_0/Coverage_Bias/FitHiC_BiasCorr/Merge_Nearby_Interactions/4OHT.arcs
+title = pNBS1_4OHT_links
+orientation = inverted
+color = lightblue
+line_style = solid
+height = 2
+
+[test arcs]
+file = /mnt/NC/HiChIP/FitHiChIP/DMSOHiChIP_DSB/FitHiChIP_Peak2ALL_b5000_L10000_U2000000/P2PBckgr_0/Coverage_Bias/FitHiC_BiasCorr/Merge_Nearby_Interactions/DMSO.arcs
+title = pNBS1_DMSO_links
+orientation = inverted
+color = lightblue
+line_style = solid
+height = 2
+
+[spacer]
+
+[simple bed]
+file = DSB.bed
+title = DSB
+color = orange
+border_color = orange
+line_width = 0.5
+file_type = bed
+labels = off
+
+[spacer]
+
+[genes]
+file = /home/DDR/GTF/Homo_sapiens.GRCh38.112.gtf
+title = genes
+color = darkblue
+border_color = darkblue
+labels = on
+type = genes
+file_type = gtf
+fontsize = 10
+gene_rows = 1
+height = 1
+
+[x-axis]
+#top or bottom
+where = bottom
