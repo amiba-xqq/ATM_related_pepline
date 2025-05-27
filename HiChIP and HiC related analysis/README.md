@@ -40,10 +40,8 @@ To analyze pNBS1 HiChIP loops and generate visualizations using this script, ens
 - **FitHiChIP:** Available at [FitHiChIP](https://github.com/ay-lab/FitHiChIP).
 - **HiCExplorer:** Obtainable from [HiCExplorer](https://github.com/deeptools/HiCExplorer).
 
-**Configuration Files for HiChIP Analysis:**
-The configuration files `configfile_HiChIP_4OHT_DSB` and `configfile_HiChIP_DMSO_DSB` are essential for running the 
-`FitHiChIP_HiCPro.sh` script within `1.FitHiChIP_get_pNBS1_HiChIP_loops.sh`. These files specify parameters needed to process HiChIP 
-data effectively.
+`configfile_HiChIP_4OHT_DSB` and `configfile_HiChIP_DMSO_DSB` are essential for `FitHiChIP_HiCPro.sh` within `1.FitHiChIP_get_pNBS1_HiChIP_loops.sh`. These files specify parameters needed to process HiChIP 
+data.
 
 **Plotting Configuration:**
 For creating plots using `hicPlotTADs`, ensure you have the configuration file `FitHiChIP_DSB_link.table` in your directory. This 
