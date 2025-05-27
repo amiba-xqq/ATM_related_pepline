@@ -21,7 +21,8 @@
 `2.APA_analysis.sh`用于获取DIvA细胞中同一染色体内ATM激活DSB位点与相邻的condensate binding regions/non-DSB pNBS1 peaks配对的loops，以及随机配对loops,最后进行APA分析并作图。需要提前安装`fanc`(https://github.com/vaquerizaslab/fanc) 。
 
 
-`0.pepline_HiChIP.sh` is used for upstream analysis of HiChIP and HiC data. It is recommended to use a conda environment with Python3 (>=3.8) installed, along with the following software:
+**`0.pepline_HiChIP.sh`**:
+is used for upstream analysis of HiChIP and HiC data. It is recommended to use a conda environment with Python3 (>=3.8) installed, along with the following software:
 * fastqc
 * multiqc
 * fastp
@@ -29,13 +30,11 @@
 * samtools
 * pairtools
 
-**HiChIP Installation:**
 Additionally, you need to install HiChIP from the following GitHub repository: [HiChIP](https://github.com/dovetail-genomics/HiChiP).
 
-**Required Files for `0.pepline_HiChIP.sh`:**
-The script `0.pepline_HiChIP.sh` requires the `hg38.genome` file, which should be downloaded and placed in your working directory.
+`hg38.genome` file is used in `0.pepline_HiChIP.sh`.
 
-**Using `1.FitHiChIP_get_pNBS1_HiChIP_loops.sh`:**
+**`1.FitHiChIP_get_pNBS1_HiChIP_loops.sh`:**
 To analyze pNBS1 HiChIP loops and generate visualizations using this script, ensure you have the following tools installed:
 
 - **FitHiChIP:** Available at [FitHiChIP](https://github.com/ay-lab/FitHiChIP).
