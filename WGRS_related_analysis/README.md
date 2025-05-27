@@ -10,3 +10,7 @@
 此外还需要使用GATK，从而得到VCF文件；最后使用ANNOVAR对VCF进行注释。
 
 `1.vcf_clean.R`利用经过ANNOVAR注释的VCF文件，去除对照组中出现的突变，获得各组特异的突变位点信息。
+
+`2.IRAK1i_or_ATMi_related_mutant.R`分析了IRAK1i和ATMi导致的全局基因突变变化的相关性。
+
+
