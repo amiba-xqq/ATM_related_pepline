@@ -11,8 +11,6 @@ mkdir fastq_results;
 ls *.gz | xargs fastqc -t 12 -o  ./fastq_results/;
 multiqc ./fastq_results/ -n multiqc_raw -o ./multiqcresults/;
 
-cd ${dir}/raw_merge/;
-paired
 ls *_1*  >1
 ls *_2*  >2
 paste 1 2 >config
