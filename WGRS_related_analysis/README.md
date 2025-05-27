@@ -6,4 +6,5 @@
 * trim-galore
 * samtools
 * bwa
+
 此外还需要使用GATK，从而得到VCF文件；最后使用ANNOVAR对VCF进行注释。
