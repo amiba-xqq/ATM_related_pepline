@@ -23,7 +23,7 @@ query_SNV <- GDCquery(
   access = "open",
 )
 GDCdownload(query_SNV)
-GDCprepare(query_SNV, save = T,save.filename = "TCGA-BRCA_ATM_high_SNP.Rdata") #运行时间非常长
+GDCprepare(query_SNV, save = T,save.filename = "TCGA-BRCA_ATM_high_SNP.Rdata") 
 load(file = "TCGA-BRCA_ATM_high_SNP.Rdata")
 mafs <- data
 maf_raw_high <- read.maf(mafs)
@@ -40,7 +40,7 @@ query_SNV <- GDCquery(
   access = "open",
 )
 GDCdownload(query_SNV)
-GDCprepare(query_SNV, save = T,save.filename = "TCGA-BRCA_ATM_low_SNP.Rdata") #运行时间非常长
+GDCprepare(query_SNV, save = T,save.filename = "TCGA-BRCA_ATM_low_SNP.Rdata") 
 load(file = "TCGA-BRCA_ATM_low_SNP.Rdata")
 mafs <- data
 maf_raw_low <- read.maf(mafs)
