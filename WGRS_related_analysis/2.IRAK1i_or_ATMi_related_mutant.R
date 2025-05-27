@@ -40,6 +40,7 @@ table(total.gene$log2FC_EtoIvsEto>=log2(2))
 table(total.gene$log2FC_EtoIvsEto<= -log2(2))
 table(total.gene$log2FC_EtoAvsEto>=log2(2))
 table(total.gene$log2FC_EtoAvsEto<= -log2(2))
+save(total.gene,file="2.mutant_gene.Rdata")
 
 ####分析IRAK1i与ATMi导致的基因突变的变化是否相关####
 ####Analyze whether changes in gene mutations caused by IRAK1i and ATMi are correlated####
@@ -60,34 +61,3 @@ ggplot(total.gene.filt,aes(x=log2FC_EtoIvsEto,y=log2FC_EtoAvsEto))+
   xlab("Mutant number change (Eto+IRAK1i vs Eto)")+
   ylab("Mutant number change (Eto+ATMi vs Eto)")
 ggsave('./results/IRAK1i和ATMi带来的突变变化是类似的.pdf',width = 6,height =6)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
