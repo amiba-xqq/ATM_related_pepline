@@ -34,7 +34,7 @@ do
     arr=($id)
     fq1=${arr[0]}
     fq2=${arr[1]}
-	  sample=$(basename -s _1_val_1.fq.gz $fq1)
+    sample=$(basename -s _1_val_1.fq.gz $fq1)
     bwa mem -t 20 -R "@RG\tID:$sample\tSM:$sample\tLB:WGRS\tPL:Illumina" $index $fq1 $fq2 | samtools view -Sb | samtools sort -@ 20 -O bam  > ${dir}/bam/$(basename -s _1_val_1.fq.gz $fq1).bam
 done
 
