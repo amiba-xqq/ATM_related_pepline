@@ -51,7 +51,6 @@ gmt <- function(a,k){
 ####分析NBS1-RIPseq的IRIRAK1ivsIR的差异基因，导出GSEA分析的rnk和gmt，用于分析各类型RNA的相关性####
 ####Analyze NBS1-RIPseq data comparing IRIRAK1 vs IR; export GSEA rnk and gmt files; analyze correlations between RNA types and IRAK1i induced NBS1-binding RNA changes####
 NBS1RIP_IRvsIRIRAK1i.rnk <- NBS1RIP_clear[,c(4,8)]
-
 # 取|FC|>1.5作为IRvsIR+IRAK1i富集差异的Gene
 # Filter genes with |FC| > 1.5 for IR vs IR+IRAK1i enrichment differences
 NBS1RIP_IRvsIRIRAK1i.rnk <- NBS1RIP_IRvsIRIRAK1i.rnk[NBS1RIP_IRvsIRIRAK1i.rnk$log2_FC_IRIRAK1ivsIR_RIP< -1,]
