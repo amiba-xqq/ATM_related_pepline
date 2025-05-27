@@ -8,6 +8,6 @@
 * samtools
 * pairtools
 
-此外还需要安装HiChiP(https://github.com/dovetail-genomics/HiChiP)。
+此外还需要安装HiChiP(https://github.com/dovetail-genomics/HiChiP) 
 
 
