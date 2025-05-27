@@ -23,6 +23,7 @@
 
 
 `0.pepline_WGRS.sh` is used for upstream analysis of WGRS. Before GATK steps, set up a Conda environment. Requires Python 3 (>=3.8). The following software needs to be installed:
+* fastqc
 * multiqc
 * trim-galore
 * samtools
