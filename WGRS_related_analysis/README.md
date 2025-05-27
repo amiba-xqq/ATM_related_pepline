@@ -29,3 +29,16 @@
 * bwa
 
 Additionally, GATK is needed to generate a VCF file; finally, ANNOVAR is used to annotate the VCF.
+
+`1.vcf_clean.R`: Uses the VCF file annotated with ANNOVAR to remove mutations present in the control group, thereby obtaining specific mutation site information for each experimental group.
+
+`2.IRAK1i_or_ATMi_related_mutant.R`: Analyzes the correlation between global gene mutation changes caused by IRAK1 inhibitors(IRAK1i) or ATMi inhibitors(ATMi).
+
+`3.Gene_expression_of_mutants.R`: Examines expression levels of genes with increased mutations after IRAK1i or ATMi treatment in normal HeLa cells. Additionally, it assesses the correlation between gene transcription levels and mutation levels in Etoposide-treated groups.
+ 
+`4.Other_ChIPseq_signal_in_mutated_genes.R`: Investigates the distribution of other ChIP-seq signals across genes with increased mutations post-IRAK1i or ATMi treatment.
+
+`5.Get_TPM_matrix_from_TCGA_BRCA.R`: Downloads and processes gene expression data from TCGA-BRCA to create a TPM (Transcripts Per Million) matrix.
+
+`6.TCGA_BRCA_related_analysis.R`: Uses the TPM matrix generated in `5.Get_TPM_matrix_from_TCGA_BRCA.R`. It classifies BRCA tumors into ATM high-expression and low-expression groups and analyzes mutation rates of genes with increased mutations after IRAK1i or ATMi treatment across these tumor groups.
+
