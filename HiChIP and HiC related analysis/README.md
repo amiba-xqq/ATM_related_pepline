@@ -18,7 +18,7 @@
 
 `FitHiChIP_DSB_link.table`是`1.FitHiChIP_get_pNBS1_HiChIP_loops.sh`中使用`hicPlotTADs`作图需要的设置参数的文档。
 
-`2.APA_analysis.sh`用于获取DIvA细胞中同一染色体内ATM激活DSB位点与相邻的condensate binding regions/non-DSB pNBS1 peaks配对的loops，以及随机配对loops，最后进行APA分析并作图。需要提前安装`fanc`(https://github.com/vaquerizaslab/fanc) 。
+`2.APA_analysis.sh`用于获取DIvA细胞中同一染色体内ATM激活DSB位点与相邻的condensate binding regions/non-DSB pNBS1 peaks配对的loops，以及随机配对loops，最后进行APA分析并作图。需要提前安装[fanc](https://github.com/vaquerizaslab/fanc) 。
 
 
 `0.pepline_HiChIP.sh`:is used for upstream analysis of HiChIP and HiC data. It is recommended to use a conda environment with Python3 (>=3.8) installed, along with the following software:
