@@ -10,4 +10,4 @@ mkdir DMSOHiChIP
 # 使用HicPlotTADs作图，展示各组中同DSB相互作用的loops
 # Use HicPlotTADs to create plots and display the loops interacting with the DSB sites for each group.
 cd /mnt/NC/HiChIP/FitHiChIP/
-hicPlotTADs --tracks FitHiChIP_DSB_link4.table --width 20 --height 10 --region chr2:53,369,673-57,369,673 -o ./figures/FitHiChIP_4OHTvsDSB_links.pdf
+hicPlotTADs --tracks FitHiChIP_DSB_link.table --width 20 --height 10 --region chr2:53,369,673-57,369,673 -o ./figures/FitHiChIP_4OHTvsDSB_links.pdf
