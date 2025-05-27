@@ -37,21 +37,21 @@ do
     fq1=${arr[0]}
     fq2=${arr[1]}
     STAR \
-	  --runMode alignReads \
+    --runMode alignReads \
     --runThreadN 18 \
-  	--genomeDir ${genome} \
-  	--readFilesCommand zcat \
-	  --readFilesIn $fq1 $fq2 \
-  	--outSAMtype BAM Unsorted \
-  	--outSAMunmapped None \
-  	--outFileNamePrefix ${dir}/bam/$(basename -s _val_1.fq.gz $fq1).bam \
-  	--outFilterMismatchNmax 10 \
-  	--outTmpDir /home/niechen/niechen \
-  	--outFilterMatchNmin 10 \
-  	--alignEndsType Local \
-  	--seedSearchLmax 10 \
+    --genomeDir ${genome} \
+    --readFilesCommand zcat \
+    --readFilesIn $fq1 $fq2 \
+    --outSAMtype BAM Unsorted \
+    --outSAMunmapped None \
+    --outFileNamePrefix ${dir}/bam/$(basename -s _val_1.fq.gz $fq1).bam \
+    --outFilterMismatchNmax 10 \
+    --outTmpDir /home/niechen/niechen \
+    --outFilterMatchNmin 10 \
+    --alignEndsType Local \
+    --seedSearchLmax 10 \
     --outFilterScoreMinOverLread 0.1 \
-  	--outFilterMatchNminOverLread 0.1
+    --outFilterMatchNminOverLread 0.1
 done
 
 cd ${dir}/bam/;
