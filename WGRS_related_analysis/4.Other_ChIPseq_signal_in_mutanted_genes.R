@@ -96,5 +96,5 @@ p1 <- pheatmap::pheatmap(n2,show_colnames =T,show_rownames = T,
                          fontsize_col = 12,             
                          fontsize_row = 12)
 p1
-ggsave(p1,filename = "./results/IRAK1i或ATMi导致突变增加的gene倾向于是转录更活跃的gene-热图.pdf",
+ggsave(p1,filename = "./results/genes where mutations increase after treatment with IRAK1 inhibitors or ATMi are more likely to be highly transcribed-Heatmap.pdf",
        width=4,height=5)
