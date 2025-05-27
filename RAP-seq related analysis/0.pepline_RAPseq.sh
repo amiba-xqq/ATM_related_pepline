@@ -105,3 +105,12 @@ do
 echo $id
 bamCoverage --normalizeUsing CPM -b $id -o ${dir}/bw/$(basename -s .bam $id).bw
 done 
+
+# 计算各组RAPseq在TSS±5kb范围分布的counts
+# Calculate distribution of RAPseq counts within TSS ±5kb range for each group.
+# `ucsc.refseq.tss.sort.bed` is downloaded from UCSC website, marks the TSS sites of all gene in hg38 genome.
+cd /media/niechen/niechen3/IRAK1_study/RAPseq/bam_sort/
+bedtools multicov -bams 1input.rmdupsorted.bam 1U1.merged.bam 1U2-r1.rmdupsorted.bam 1U6.merged.bam \
+2input.rmdupsorted.bam 2U1.merged.bam 2U2.merged.bam 2U6.merged.bam \
+3input.rmdupsorted.bam 3U1.merged.bam 3U2-r1.rmdupsorted.bam 3U6.merged.bam \
+-bed ucsc.refseq.tss.sort.bed > /media/niechen/niechen3/IRAK1_study/RAPseq/RAPseq_and_pATM_ChIPseq_relationship/RAPseq_and_pATM_ChIPseq_in_TSS_10kb.txt
