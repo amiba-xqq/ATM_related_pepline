@@ -9,7 +9,7 @@
 * pyvista(0.44.2)
 * imageio(2.33.1)
 
-`3D_make_model.py`基于原始的pATM/EU荧光TIFF图片，得到他们的3D模型。
+`3D_make_model.py`基于原始的pATM/EU荧光TIFF图片，得到它们的3D模型。
 
 `EU_enrichment_analysis.py`基于原始的pATM/EU荧光TIFF图片，得到pATM foci的sphere模型，并计算EU在每个球体区域的相对荧光强度（EU enrichment），最后计算每个foci的体积与EU enrichment的Spearman相关系数。
 
