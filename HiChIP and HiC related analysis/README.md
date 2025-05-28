@@ -1,6 +1,6 @@
 # HiChIP and HiC related analysis
 
-`0.pepline_HiChIP.sh`用于对HiChIP和HiC进行上游分析，建议使用conda环境，依赖Python3(>=3.8)，且需要安装下面的软件：
+`0.pepline_HiChIP.sh`用于对in situ Hi-C followed chromatin immunoprecipitation (HiChIP)和High-through chromosome conformation capture (Hi-C)进行上游分析，建议使用conda环境，依赖Python3(>=3.8)，且需要安装下面的软件：
 * fastqc
 * multiqc
 * fastp
@@ -21,7 +21,7 @@
 `2.APA_analysis.sh`用于获取DIvA细胞中同一染色体内ATM激活DSB位点与相邻的condensate binding regions/non-DSB pNBS1 peaks配对的loops，以及随机配对loops，最后进行APA分析并作图。需要提前安装[fanc](https://github.com/vaquerizaslab/fanc) 。
 
 
-`0.pepline_HiChIP.sh`:is used for upstream analysis of HiChIP and HiC data. It is recommended to use a conda environment with Python3 (>=3.8) installed, along with the following software:
+`0.pepline_HiChIP.sh`:is used for upstream analysis of in situ Hi-C followed chromatin immunoprecipitation (HiChIP) and High-through chromosome conformation capture (Hi-C) data. It is recommended to use a conda environment with Python3 (>=3.8) installed, along with the following software:
 * fastqc
 * multiqc
 * fastp
