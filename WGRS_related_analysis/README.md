@@ -7,7 +7,7 @@
 * samtools
 * bwa
 
-此外还需要使用GATK，从而得到VCF文件；最后使用ANNOVAR对VCF进行注释。
+此外还需要使用[GATK](https://github.com/broadinstitute/gatk)，从而得到VCF文件；最后使用[ANNOVAR](https://www.openbioinformatics.org/annovar/annovar_download_form.php)对VCF进行注释。
 
 `1.vcf_clean.R`利用经过ANNOVAR注释的VCF文件，去除对照组中出现的突变，获得各组特异的突变位点信息。
 
@@ -29,7 +29,7 @@
 * samtools
 * bwa
 
-Additionally, GATK is needed to generate a VCF file; finally, ANNOVAR is used to annotate the VCF.
+Additionally, [GATK](https://github.com/broadinstitute/gatk) is needed to generate a VCF file; finally, [ANNOVAR](https://www.openbioinformatics.org/annovar/annovar_download_form.php) is used to annotate the VCF.
 
 `1.vcf_clean.R`: Uses the VCF file annotated with ANNOVAR to remove mutations present in the control group, thereby obtaining specific mutation site information for each experimental group.
 
