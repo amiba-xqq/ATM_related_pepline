@@ -59,7 +59,7 @@ def process_image_sequence(image_a_path, image_b_path, threshold_a, radius):
     df = pd.DataFrame(results, columns=['Foci Volume', 'Integrated Density'])
     df.to_csv('foci_statistics.csv', index=False)
 
-# 设置参数:threshold_a是pATM荧光图片进行二值化的阈值;radius是每个pATM foci对应的球体的半径，单位为px，根据比例尺进行，更改需要确保这个长度是0.5 μm
+# 设置参数:threshold_a是pATM荧光图片进行二值化的阈值;radius是每个pATM foci对应的球体的半径，单位为px，根据比例尺进行更改，需要确保这个长度是0.5 μm
 # Set parameters: threshold_a is the binary threshold for pATM fluorescence images; radius specifies the sphere radius (in pixels) corresponding to each pATM focus, adjustments should ensure this length corresponds to 0.5 µm
 image_a_path = 'pATM.tif'
 image_b_path = 'EU.tif'
