@@ -1,6 +1,6 @@
 # ACC-seq related analysis
 
-`0.pepline_ACCseq.sh`用于对ACC-seq原始数据进行上游分析。建议构建conda环境，依赖Python3(>=3.8)，并已安装下面的软件：
+`0.pepline_ACCseq.sh`用于对Assay for chromatin-bound condensates by exploratory sequencing (ACC-seq)原始数据进行上游分析。建议构建conda环境，依赖Python3(>=3.8)，并已安装下面的软件：
 * fastqc
 * multiqc
 * fastp
@@ -34,7 +34,7 @@
 `8.distance_between_condensate_binding_regions_and_other_genomic_sites.R`用于分析condensate_binding_region与最临近的ATM激活DSB位点或non-DSB pNBS1 peaks(来自于`ChIP-seq related analysis`)之间的基因组距离。
 
 
-`0.pepline_ACCseq.sh` is used for upstream analysis of ACC-seq raw data. It is recommended to set up a conda environment, which requires Python3 (version 3.8 or higher), and the following software should be installed:
+`0.pepline_ACCseq.sh` is used for upstream analysis of Assay for chromatin-bound condensates by exploratory sequencing (ACC-seq) raw data. It is recommended to set up a conda environment, which requires Python3 (version 3.8 or higher), and the following software should be installed:
 * fastqc
 * multiqc
 * fastp
