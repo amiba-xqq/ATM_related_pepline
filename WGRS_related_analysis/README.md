@@ -1,6 +1,6 @@
 # WGRS_related_analysis
 
-`0.pepline_WGRS.sh`用于对WGRS进行上游分析，GATK之前的步骤建立构建conda环境，依赖Python3(>=3.8)，需要安装下面的软件：
+`0.pepline_WGRS.sh`用于对Whole-genome resequencing (WGRS)进行上游分析，GATK之前的步骤建立构建conda环境，依赖Python3(>=3.8)，需要安装下面的软件：
 * fastqc
 * multiqc
 * trim-galore
@@ -22,7 +22,7 @@
 `6.TCGA_BRCA_related_analysis.R`利用`5.Get_TPM_matrix_from_TCGA_BRCA.R`得到的TPM矩阵，并将BRCA肿瘤分为ATM高表达/低表达肿瘤，最后分析了IRAK1i或ATMi处理后突变增加的基因在这两群肿瘤的突变率。
 
 
-`0.pepline_WGRS.sh` is used for upstream analysis of WGRS. Before GATK steps, set up a Conda environment. Requires Python 3 (>=3.8). The following software needs to be installed:
+`0.pepline_WGRS.sh` is used for upstream analysis of Whole-genome resequencing (WGRS). Before GATK steps, set up a Conda environment. Requires Python 3 (>=3.8). The following software needs to be installed:
 * fastqc
 * multiqc
 * trim-galore
