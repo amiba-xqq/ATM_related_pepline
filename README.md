@@ -1,3 +1,3 @@
 # ATM_related_pepline
 
-这篇文章中分析测序数据或免疫荧光图片所使用的所有脚本。
+All scripts used to analyze sequencing data or immunofluorescence images in this article: snRNA Orchestrates ATM Activation to Promote Accurate Repair within Transcriptionally Active Chromatin.
